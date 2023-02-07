@@ -14,7 +14,7 @@ var SpecialCharArray = [ "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")","
 
 
 function generatePassword(){
-  var passwordLength = parseInt(prompt ("Between 8 -128 characters, How many Characters would you like your password to contain"));
+  var passwordLength = parseInt(prompt ("Please choose a character limit between 8-128 characters."));
   if(passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)){
     alert("Password must be between 8 and 128 characters long!");
     return generatePassword ()
